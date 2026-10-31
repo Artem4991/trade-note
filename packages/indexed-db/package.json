@@ -1,0 +1,19 @@
+{
+  "name": "@trade-note/indexed-db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@trade-note/eslint-config": "workspace:*",
+    "@trade-note/typescript-config": "workspace:*",
+    "eslint": "^10.14.0",
+    "typescript": "~6.0.3"
+  }
+}

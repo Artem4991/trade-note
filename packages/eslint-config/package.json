@@ -1,0 +1,25 @@
+{
+  "name": "@trade-note/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --config base.mjs --max-warnings=0"
+  },
+  "exports": {
+    "./base": "./base.mjs",
+    "./vue": "./vue.mjs"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint-plugin-vue": "^10.12.0",
+    "globals": "^17.13.0",
+    "typescript-eslint": "^8.72.1"
+  },
+  "devDependencies": {
+    "eslint": ">=9"
+  }
+}
