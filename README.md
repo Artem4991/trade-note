@@ -13,6 +13,8 @@ Offline-first приложение для ведения личного инве
 
 ## Быстрый старт
 
+Требуются Node `24.22.1` и pnpm `12.16.1`. Версия Node зафиксирована в `.node-version`, версия pnpm — в `packageManager`.
+
 ```bash
 pnpm install
 pnpm dev
@@ -41,6 +43,10 @@ pnpm fix
 Husky устанавливает локальные Git hooks через `prepare` во время `pnpm install`. Перед каждым коммитом `.husky/pre-commit` запускает `pnpm check`: Prettier, ESLint и typecheck.
 
 Pre-commit является быстрым локальным барьером и не заменяет полный `pnpm verify` перед завершением задачи или отправкой изменений.
+
+## Continuous integration
+
+GitHub Actions запускает `pnpm verify` для каждого pull request в `main`, после push в `main` и вручную через `workflow_dispatch`. CI использует Node `24.22.1`, pnpm `12.16.1`, frozen lockfile и cache pnpm store.
 
 ## Документация
 

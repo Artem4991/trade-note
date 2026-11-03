@@ -16,6 +16,8 @@
 - pnpm workspaces для монорепозитория.
 - ESLint, Prettier и Vitest для контроля качества.
 
+Поддерживаемый runtime зафиксирован: Node `24.22.1` и pnpm `12.16.1`. Прямые внешние зависимости используют `~`, поэтому разрешены только совместимые patch-обновления; `pnpm-workspace.yaml` сохраняет этот стиль через `savePrefix: '~'`. Workspace-зависимости используют протокол `workspace:*`, peer dependencies описывают диапазон совместимости, а фактически установленные версии принадлежат `pnpm-lock.yaml`. Несовместимый runtime отклоняется через `engineStrict`.
+
 Vue Router, Pinia, TanStack Query и Turborepo не подключаются до появления конкретной потребности.
 
 ## Структура репозитория
@@ -23,6 +25,7 @@ Vue Router, Pinia, TanStack Query и Turborepo не подключаются д�
 ```text
 trade-note/
 ├── .agents/skills/          # Локальные skills coding agents
+├── .github/workflows/       # GitHub Actions workflows
 ├── apps/
 │   └── web/                 # Vue-приложение
 │       └── src/
@@ -82,7 +85,8 @@ trade-note/
 - `pnpm check` запускает быстрые проверки форматирования, ESLint и типов.
 - `pnpm verify` выполняет все quality gates и `git diff --check`, не останавливаясь на первой ошибке, и печатает итоговую сводку.
 - Husky запускает `pnpm check` в `pre-commit`; hook не изменяет staged-файлы и не заменяет полный `pnpm verify`.
-- Будущий CI должен устанавливать зависимости через `pnpm install --frozen-lockfile` и запускать тот же `pnpm verify`, который используют локально и агенты.
+- GitHub Actions запускает тот же `pnpm verify` на pull request и push в `main` с Node `24.22.1`, pnpm `12.16.1`, frozen lockfile и cache pnpm store.
+- В CI Husky отключён через `HUSKY=0`, потому что серверный workflow сам выполняет обязательные проверки.
 
 ## Возможный сервер
 

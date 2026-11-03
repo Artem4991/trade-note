@@ -1,6 +1,6 @@
 # Прогресс Trade Note
 
-Обновлено: 3 ноября 2026 года.
+Обновлено: 4 ноября 2026 года.
 
 ## Текущий статус
 
@@ -18,6 +18,8 @@
 - [x] Настроены Prettier, ESLint, typecheck, Vitest и production-сборка.
 - [x] Усилены quality gates: typed ESLint, строгий TypeScript, FSD-ограничения импортов и единая команда `pnpm verify` со сводкой ошибок.
 - [x] Добавлен Husky с быстрым `pre-commit` hook, запускающим `pnpm check`.
+- [x] Добавлен GitHub Actions CI, запускающий `pnpm verify` для pull request и push в `main`.
+- [x] Зафиксированы Node `24.22.1` и pnpm `12.16.1`; прямые внешние зависимости допускают только patch-обновления через `~`.
 - [x] Добавлены инструкции и локальные skills для coding agents.
 - [x] Документация разделена на продукт, архитектуру и прогресс.
 

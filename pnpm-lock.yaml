@@ -167,10 +167,10 @@ importers:
   .:
     devDependencies:
       husky:
-        specifier: ^9.1.7
+        specifier: ~9.1.7
         version: 9.1.7
       prettier:
-        specifier: ^3.9.10
+        specifier: ~3.9.10
         version: 3.9.10
       typescript:
         specifier: ~6.0.3
@@ -179,10 +179,10 @@ importers:
   apps/web:
     dependencies:
       naive-ui:
-        specifier: ^2.45.3
+        specifier: ~2.45.3
         version: 2.45.3(vue@3.5.44(typescript@6.0.3))
       vue:
-        specifier: ^3.5.44
+        specifier: ~3.5.44
         version: 3.5.44(typescript@6.0.3)
     devDependencies:
       '@trade-note/eslint-config':
@@ -192,41 +192,41 @@ importers:
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/node':
-        specifier: ^26.6.6
+        specifier: ~26.6.6
         version: 26.6.6
       '@vitejs/plugin-vue':
-        specifier: ^6.0.10
+        specifier: ~6.0.10
         version: 6.0.10(vite@8.3.5(@types/node@26.6.6))(vue@3.5.44(typescript@6.0.3))
       eslint:
-        specifier: ^10.14.0
+        specifier: ~10.14.0
         version: 10.14.0
       vite:
-        specifier: ^8.3.5
+        specifier: ~8.3.5
         version: 8.3.5(@types/node@26.6.6)
       vitest:
-        specifier: ^5.0.5
+        specifier: ~5.0.5
         version: 5.0.5(@types/node@26.6.6)(vite@8.3.5(@types/node@26.6.6))
       vue-tsc:
-        specifier: ^3.3.14
+        specifier: ~3.3.14
         version: 3.3.14(typescript@6.0.3)
 
   packages/eslint-config:
     dependencies:
       '@eslint/js':
-        specifier: ^10.0.1
+        specifier: ~10.0.1
         version: 10.0.1(eslint@10.14.0)
       eslint-plugin-vue:
-        specifier: ^10.12.0
+        specifier: ~10.12.0
         version: 10.12.0(@typescript-eslint/parser@8.72.1(eslint@10.14.0)(typescript@6.0.3))(eslint@10.14.0)(vue-eslint-parser@10.4.1(eslint@10.14.0))
       globals:
-        specifier: ^17.13.0
+        specifier: ~17.13.0
         version: 17.13.0
       typescript-eslint:
-        specifier: ^8.72.1
+        specifier: ~8.72.1
         version: 8.72.1(eslint@10.14.0)(typescript@6.0.3)
     devDependencies:
       eslint:
-        specifier: '>=9'
+        specifier: ~10.14.0
         version: 10.14.0
 
   packages/indexed-db:
@@ -238,7 +238,7 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
       eslint:
-        specifier: ^10.14.0
+        specifier: ~10.14.0
         version: 10.14.0
       typescript:
         specifier: ~6.0.3
