@@ -37,6 +37,7 @@
 - Use `pnpm check` for the fast formatting, lint, and typecheck loop.
 - Before handing off an application, package, dependency, test, build, lint, or TypeScript change, run `pnpm verify` from the repository root.
 - Run `pnpm install --frozen-lockfile` before verification when dependency manifests or `pnpm-lock.yaml` changed, or when dependencies are unavailable.
+- Treat the Husky pre-commit hook as a local guard only; it does not replace the required `pnpm verify` handoff check.
 - Do not claim a check passed unless it was executed successfully.
 
 ## Documentation ownership

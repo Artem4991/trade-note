@@ -19,9 +19,11 @@
     "format:check": "prettier --check .",
     "fix": "pnpm lint:fix && pnpm format",
     "check": "pnpm format:check && pnpm lint && pnpm typecheck",
-    "verify": "node scripts/verify.mjs"
+    "verify": "node scripts/verify.mjs",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.9.10",
     "typescript": "~6.0.3"
   }

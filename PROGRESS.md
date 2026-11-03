@@ -17,6 +17,7 @@
 - [x] Подготовлена граница `packages/indexed-db` для собственной библиотеки.
 - [x] Настроены Prettier, ESLint, typecheck, Vitest и production-сборка.
 - [x] Усилены quality gates: typed ESLint, строгий TypeScript, FSD-ограничения импортов и единая команда `pnpm verify` со сводкой ошибок.
+- [x] Добавлен Husky с быстрым `pre-commit` hook, запускающим `pnpm check`.
 - [x] Добавлены инструкции и локальные skills для coding agents.
 - [x] Документация разделена на продукт, архитектуру и прогресс.
 

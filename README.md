@@ -36,6 +36,12 @@ pnpm verify
 pnpm fix
 ```
 
+## Git hooks
+
+Husky устанавливает локальные Git hooks через `prepare` во время `pnpm install`. Перед каждым коммитом `.husky/pre-commit` запускает `pnpm check`: Prettier, ESLint и typecheck.
+
+Pre-commit является быстрым локальным барьером и не заменяет полный `pnpm verify` перед завершением задачи или отправкой изменений.
+
 ## Документация
 
 - [Продукт и границы MVP](./docs/PRODUCT.md)
