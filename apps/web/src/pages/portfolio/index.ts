@@ -1,1 +1,1 @@
-export { default as PortfolioPage } from './ui/PortfolioPage.vue'
+export { default as PortfolioPage } from './ui/PortfolioPage.vue';

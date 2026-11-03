@@ -2,4 +2,7 @@ node_modules
 dist
 coverage
 pnpm-lock.yaml
+.vite
+.vitest
+*.tsbuildinfo
 .agents/skills/feature-sliced-design

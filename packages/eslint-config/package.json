@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint": "eslint . --config base.mjs --max-warnings=0"
+    "lint": "eslint . --config base.mjs --max-warnings=0",
+    "lint:fix": "eslint . --config base.mjs --fix --max-warnings=0"
   },
   "exports": {
     "./base": "./base.mjs",

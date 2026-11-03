@@ -1,3 +1,3 @@
-import baseConfig from '@trade-note/eslint-config/base'
+import baseConfig from '@trade-note/eslint-config/base';
 
-export default baseConfig
+export default baseConfig;

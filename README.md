@@ -18,13 +18,22 @@ pnpm install
 pnpm dev
 ```
 
-Основные проверки:
+Быстрые проверки форматирования, ESLint и типов:
 
 ```bash
-pnpm lint
-pnpm typecheck
-pnpm test
-pnpm build
+pnpm check
+```
+
+Полная проверка с тестами, production-сборкой и итоговой сводкой:
+
+```bash
+pnpm verify
+```
+
+Автоматическое исправление форматирования и безопасно исправляемых ESLint-ошибок:
+
+```bash
+pnpm fix
 ```
 
 ## Документация

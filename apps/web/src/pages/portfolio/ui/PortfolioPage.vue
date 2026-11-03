@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NCard, NH1, NP, NTag } from 'naive-ui'
+import { NCard, NH1, NP, NTag } from 'naive-ui';
 </script>
 
 <template>
@@ -7,13 +7,9 @@ import { NCard, NH1, NP, NTag } from 'naive-ui'
     <section class="portfolio-page__content">
       <NTag type="success" size="small" :bordered="false"> Основа проекта готова </NTag>
       <NH1 class="portfolio-page__title"> Trade Note </NH1>
-      <NP depth="3" class="portfolio-page__description">
-        Здесь появится портфель с активами, валютами и пересчётом общей стоимости.
-      </NP>
+      <NP depth="3" class="portfolio-page__description"> Здесь появится портфель с активами, валютами и пересчётом общей стоимости. </NP>
 
-      <NCard title="Портфель" embedded>
-        Первый экран подключён. Следующий этап — модель данных и локальное хранилище.
-      </NCard>
+      <NCard title="Портфель" embedded> Первый экран подключён. Следующий этап — модель данных и локальное хранилище. </NCard>
     </section>
   </main>
 </template>

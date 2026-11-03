@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { NConfigProvider, NMessageProvider } from 'naive-ui'
+import { NConfigProvider, NMessageProvider } from 'naive-ui';
 
-import { PortfolioPage } from '@/pages/portfolio'
+import { PortfolioPage } from '@/pages/portfolio';
 </script>
 
 <template>

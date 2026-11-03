@@ -12,10 +12,14 @@
     "dev": "pnpm --filter @trade-note/web dev",
     "build": "pnpm --recursive --if-present run build",
     "lint": "pnpm --recursive --if-present run lint",
+    "lint:fix": "pnpm --recursive --if-present run lint:fix",
     "typecheck": "pnpm --recursive --if-present run typecheck",
     "test": "pnpm --recursive --if-present run test",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "fix": "pnpm lint:fix && pnpm format",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck",
+    "verify": "node scripts/verify.mjs"
   },
   "devDependencies": {
     "prettier": "^3.9.10",

@@ -42,15 +42,16 @@ bash .agents/skills/code-change-verification/scripts/run.sh
 
 The script runs these barriers in order:
 
-1. `pnpm install --frozen-lockfile`
-2. `pnpm format:check`
-3. `pnpm lint`
-4. `pnpm typecheck`
-5. `pnpm test`
-6. `pnpm build`
-7. `git diff --check`
+1. `pnpm format:check`
+2. `pnpm lint`
+3. `pnpm typecheck`
+4. `pnpm test`
+5. `pnpm build`
+6. `git diff --check`
 
-If installation needs network access, request the required permission instead of removing `--frozen-lockfile` or skipping the step.
+The verification runner executes every barrier and prints a final pass/fail summary instead of stopping at the first failure.
+
+Run `pnpm install --frozen-lockfile` first when dependency manifests or `pnpm-lock.yaml` changed, or when dependencies are unavailable. If installation needs network access, request the required permission instead of removing `--frozen-lockfile` or skipping the step.
 
 ## Skill validation
 

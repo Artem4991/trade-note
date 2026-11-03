@@ -34,7 +34,9 @@
 ## Verification
 
 - Run the narrowest relevant tests while developing.
-- Before handing off a code change, run `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build` when the affected workspace supports them.
+- Use `pnpm check` for the fast formatting, lint, and typecheck loop.
+- Before handing off an application, package, dependency, test, build, lint, or TypeScript change, run `pnpm verify` from the repository root.
+- Run `pnpm install --frozen-lockfile` before verification when dependency manifests or `pnpm-lock.yaml` changed, or when dependencies are unavailable.
 - Do not claim a check passed unless it was executed successfully.
 
 ## Documentation ownership
