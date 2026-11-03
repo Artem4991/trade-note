@@ -53,5 +53,7 @@ GitHub Actions запускает `pnpm verify` для каждого pull reque
 - [Продукт и границы MVP](./docs/PRODUCT.md)
 - [Архитектура проекта](./docs/ARCHITECTURE.md)
 - [Дизайн-система и план проектирования](./docs/DESIGN_SYSTEM.md)
+- [Информационная архитектура портфеля](./docs/design/PORTFOLIO_IA.md)
+- [Low-fidelity wireframes портфеля](./docs/design/WIREFRAMES.md)
 - [Текущее состояние и следующие шаги](./PROGRESS.md)
 - [Инструкции для coding agents](./AGENTS.md)
